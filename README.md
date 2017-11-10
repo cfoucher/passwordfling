@@ -13,7 +13,8 @@ npm start
 ```
 
 ## Overview
-
+Small React app to easily and securely pass long complex passwords (or any text) between two devices.
+Use QR codes and WebRTC, with Express as the backend server.
 
 ## Deploying
 
@@ -78,5 +79,5 @@ git push heroku master
 Heroku will give you a link at which to view your live app.
 
 
-### Initially Base
+### Initial Base
 https://github.com/fullstackreact/food-lookup-demo
