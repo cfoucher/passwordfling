@@ -1,2 +1,3 @@
-@import 'style/scss/dependencies';
-@import 'style/scss/general';
+// sass-lint:disable clean-import-paths
+@import 'style/scss/dependencies.scss';
+@import 'style/scss/general.scss';

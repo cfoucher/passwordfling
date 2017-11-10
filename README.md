@@ -1,3 +1,5 @@
+# Password Fling
+
 ## Running locally
 
 ```
