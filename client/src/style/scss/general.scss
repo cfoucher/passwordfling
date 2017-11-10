@@ -1,0 +1,123 @@
+.mui-appbar {
+  background-color: mui-color('blue', '400');
+  height: 80px;
+  margin-bottom: 3%;
+  white-space: nowrap;
+
+  a {
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .center-vertically {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mui--appbar-height {
+    height: 80px;
+  }
+}
+
+.main-menu {
+  .action-panel {
+    a {
+      color: #000;
+    }
+
+    img[alt='download'], // sass-lint:disable-line force-attribute-nesting
+    img[alt='upload'] { // sass-lint:disable-line force-attribute-nesting
+      width: 40%;
+    }
+  }
+}
+
+.send {
+  .instructions {
+    padding-bottom: 30px;
+  }
+
+  .encryption-form {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  .scanner {
+    .view-finder {
+      margin: 0 auto;
+      max-width: 700px;
+    }
+
+    .options {
+      display: flex;
+      margin-top: 20px;
+
+      .camera-select {
+        .mui-dropdown__menu { // sass-lint:disable-line class-name-format
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      .result {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.receive {
+  .instructions {
+    padding-bottom: 30px;
+  }
+
+  .qr-code {
+    .title {
+      button {
+        margin-left: 10px;
+      }
+
+      .spinner {
+        margin-left: 20px;
+        position: relative;
+
+        &::before {
+          animation: spinner .6s linear infinite;
+          border-radius: 50%;
+          border-right: 2px solid transparent;
+          border-top: 2px solid #07d;
+          box-sizing: border-box;
+          content: '';
+          height: 20px;
+          left: 50%;
+          margin-left: -10px;
+          margin-top: -10px;
+          position: absolute;
+          top: 50%;
+          width: 20px;
+        }
+      }
+
+      @keyframes spinner {
+        to {transform: rotate(360deg);}
+      }
+    }
+
+    .qr-image {
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+  }
+
+  .decryption-form {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+}

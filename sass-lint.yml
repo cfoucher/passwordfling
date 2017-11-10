@@ -1,0 +1,24 @@
+files:
+  include:
+    - 'client/**/*.s+(a|c)ss'
+  ignore:
+    - 'client/node_modules/**/*.s+(a|c)ss'
+rules:
+  no-color-literals:
+    - 0
+  no-important:
+    - 0
+  placeholder-in-extend:
+    - 0
+  no-qualifying-elements:
+    - 2
+    - allow-element-with-attribute: true
+      allow-element-with-class: true
+      allow-element-with-id: false
+  nesting-depth:
+    - 2
+    - max-depth: 8
+  no-css-comments:
+    - 0
+  no-ids:
+    - 0
